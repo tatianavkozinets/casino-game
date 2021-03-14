@@ -1,8 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import Container from "@material-ui/core/Container";
-import footer from "./footer.css";
+import "./footer.css";
 
 function Copyright() {
   return (
@@ -19,7 +18,7 @@ function Copyright() {
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footerSticky">
       <Copyright />
     </div>
   );

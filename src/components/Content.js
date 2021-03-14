@@ -68,9 +68,9 @@ const Content = ({ onChangeData, tableData, user }) => {
     return Number(str);
   };
 
-  const getRandomInt = max => {
-    return Math.floor(1 + Math.random() * Math.floor(max));
-  };
+  // const getRandomInt = max => {
+  //   return Math.floor(1 + Math.random() * Math.floor(max));
+  // };
 
   const changeNumbers = n => {
     setNum(n);

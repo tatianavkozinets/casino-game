@@ -37,7 +37,7 @@ const Game = () => {
       let u = JSON.stringify(userData);
       localStorage.setItem(user, u);
     }
-  }, [balance, data]);
+  }, [balance, data, user]);
 
   const onUserChange = user => {
     setUser(user);
