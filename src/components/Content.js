@@ -17,27 +17,6 @@ const useStyles = makeStyles(theme => ({
     "& > *": {
       margin: theme.spacing(1)
     }
-  },
-
-  sheetContent: {
-    display: "flex",
-    flexWrap: "wrap",
-    "& > *": {
-      margin: theme.spacing(1),
-      width: theme.spacing(20),
-      height: theme.spacing(30)
-    },
-    mainTeateresPost: {
-      color: theme.palette.common.white,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center"
-    },
-
-    mainFeaturePostContent: {
-      position: "relative",
-      padding: theme.spacing(3)
-    }
   }
 }));
 
