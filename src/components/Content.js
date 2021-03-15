@@ -6,19 +6,14 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import Box from "@material-ui/core/Box";
 
 import DigitRoll from "digit-roll-react";
 import "./digitRoll.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1)
-    }
-  }
-}));
+const useStyles = makeStyles(theme => ({}));
 
 const Content = ({ onChangeData, tableData, user }) => {
   const classes = useStyles();
@@ -82,7 +77,7 @@ const Content = ({ onChangeData, tableData, user }) => {
 
   return (
     <Container style={{ textAlign: "center" }}>
-      <div className={classes.root}>
+      <Box>
         <Button
           variant="outlined"
           color="primary"
@@ -92,7 +87,8 @@ const Content = ({ onChangeData, tableData, user }) => {
         >
           Play Game
         </Button>
-      </div>
+      </Box>
+
       {user && <GridTable tableData={tableData} />}
 
       <Dialog

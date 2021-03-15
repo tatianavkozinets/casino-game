@@ -10,6 +10,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Tooltip from "@material-ui/core/Tooltip";
 import { deepOrange, deepPurple } from "@material-ui/core/colors";
 import LoginPopUp from "./LoginPopUp";
+import "./logo.css";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,23 +26,22 @@ const useStyles = makeStyles(theme => ({
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500]
-  },
-  logo: {
-    borderRadius: "50%",
-    border: "2px solid #ddd",
-    width: "30%",
-    height: "30%",
-    opacity: "0.5"
   }
+  // logo: {
+  //   borderRadius: "50%",
+  //   width: "25%",
+  //   height: "25%",
+  //   opacity: "0.8"
+  // }
 }));
 
 export default function Header({ user, onUserChange, balance }) {
   const classes = useStyles();
   const img = (
     <img
-      src="https://e7.pngegg.com/pngimages/934/207/png-clipart-online-casino-gambling-casino-game-sportbook-game-logo.png"
+      src="https://media.istockphoto.com/vectors/casino-logo-on-a-white-background-vector-id540828410"
       alt="Logo"
-      className={classes.logo}
+      className="logo"
     />
   );
 
@@ -51,7 +51,7 @@ export default function Header({ user, onUserChange, balance }) {
     setOpen(true);
   };
 
-  const handleClose = value => {
+  const handleClose = () => {
     setOpen(false);
   };
 
@@ -94,7 +94,13 @@ export default function Header({ user, onUserChange, balance }) {
   };
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        style={{
+          backgroundImage: `url(https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)`,
+          backgroundSize: "cover"
+        }}
+      >
         <Container>
           <Toolbar>
             {img}
