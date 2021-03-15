@@ -11,12 +11,7 @@ import Box from "@material-ui/core/Box";
 import DigitRoll from "digit-roll-react";
 import "./digitRoll.css";
 
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles(theme => ({}));
-
 const Content = ({ onChangeData, tableData, user }) => {
-  const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [num, setNum] = useState("000");
 
