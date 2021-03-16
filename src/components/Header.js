@@ -82,12 +82,15 @@ export default function Header({ user, onUserChange, balance }) {
           </Box>
 
           <Tooltip title="Log Out">
-            <Box mr={4} style={{ cursor: "pointer" }}>
-              <Avatar className={classes.orange} onClick={handleLogOut}>
+            <Box mr={2} style={{ cursor: "pointer" }}>
+              <Avatar className={classes.purple} onClick={handleLogOut}>
                 {user[0]}
               </Avatar>
             </Box>
           </Tooltip>
+          <Button color="inherit" variant="outlined" onClick={handleLogOut}>
+            Log Out
+          </Button>
         </>
       );
     }

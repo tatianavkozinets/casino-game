@@ -1,7 +1,7 @@
 .DigitRoll__Cell {
     margin: 0 5px;
     border: 1px solid rgb(255, 255, 255);
-    background: rgb(70, 65, 70);
+    background: #3f51b5;
     font-size: 80px;
     color: rgb(255, 255, 255);
 }
