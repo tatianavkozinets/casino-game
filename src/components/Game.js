@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 import Content from "./Content";
+import "./index.css";
 
 const Game = () => {
   const [user, setUser] = useState(null);
@@ -57,12 +57,12 @@ const Game = () => {
   };
 
   return (
-    <div>
+    <div className="content">
       <Header user={user} onUserChange={onUserChange} balance={balance} />
       <main>
         <Content onChangeData={onChangeData} tableData={data} user={user} />
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };
